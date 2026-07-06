@@ -1,4 +1,4 @@
-# md-reader
+# read-md
 
 **Instant, beautiful Markdown reader for projects drowning in `.md` files.**
 
