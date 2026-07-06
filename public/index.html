@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>md-reader</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>📘</text></svg>" />
+  <link id="markdown-theme" rel="stylesheet" href="/vendor/markdown-dark.css" />
+  <link id="hljs-theme" rel="stylesheet" href="/vendor/hljs-dark.css" />
+  <link rel="stylesheet" href="/app.css" />
+</head>
+<body data-theme="dark">
+  <aside id="sidebar">
+    <div class="sidebar-header">
+      <div class="brand">
+        <span class="brand-icon">📘</span>
+        <div class="brand-text">
+          <span id="project-name">…</span>
+          <span id="file-count" class="muted"></span>
+        </div>
+      </div>
+      <button id="theme-toggle" title="Cambia tema">🌙</button>
+    </div>
+    <div class="search-box">
+      <input id="search" type="search" placeholder="Cerca file…  ( / )" autocomplete="off" />
+    </div>
+    <nav id="tree"></nav>
+  </aside>
+
+  <main id="main">
+    <header id="topbar">
+      <button id="sidebar-toggle" title="Mostra/nascondi sidebar">☰</button>
+      <span id="current-path" class="muted"></span>
+      <span id="live-dot" title="Live reload attivo"></span>
+    </header>
+    <div id="content-wrap">
+      <article id="content" class="markdown-body">
+        <div class="placeholder">
+          <h1>📘 md-reader</h1>
+          <p>Seleziona un file dalla sidebar per iniziare.</p>
+        </div>
+      </article>
+      <aside id="toc-panel">
+        <div class="toc-title">In questa pagina</div>
+        <nav id="toc"></nav>
+      </aside>
+    </div>
+  </main>
+
+  <script src="/vendor/marked.min.js"></script>
+  <script src="/vendor/highlight.min.js"></script>
+  <script src="/vendor/mermaid.min.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

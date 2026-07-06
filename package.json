@@ -1,0 +1,37 @@
+{
+  "name": "md-reader",
+  "version": "1.0.0",
+  "description": "Instant local Markdown reader for AI-heavy projects — browse skills, rules, plans, and docs in a beautiful browser UI with one command.",
+  "license": "MIT",
+  "keywords": [
+    "markdown",
+    "markdown-reader",
+    "documentation",
+    "ai-agents",
+    "cursor",
+    "cli",
+    "mermaid",
+    "developer-tools",
+    "local-server",
+    "docs"
+  ],
+  "bin": {
+    "read-md": "bin/read-md.js",
+    "md-reader": "bin/read-md.js"
+  },
+  "main": "lib/server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "public"
+  ],
+  "dependencies": {
+    "@highlightjs/cdn-assets": "^11.10.0",
+    "github-markdown-css": "^5.7.0",
+    "marked": "^15.0.0",
+    "mermaid": "^11.4.0"
+  }
+}
