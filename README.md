@@ -153,8 +153,8 @@ The server listens on **localhost only** (`127.0.0.1`). It cannot be reached fro
 Clone, install, and link locally:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/md-reader.git
-cd md-reader
+git clone https://github.com/AndreaZero/read-md.git
+cd read-md
 npm install
 npm install -g .
 ```
@@ -169,7 +169,7 @@ When you make the repository public, use these settings on GitHub:
 
 | Field | Suggested value |
 |-------|-----------------|
-| **Name** | `md-reader` |
+| **Name** | `read-md` |
 | **Description** | Instant local Markdown reader for AI-heavy projects — browse skills, rules, plans & docs in a beautiful UI |
 | **Topics** | `markdown`, `documentation`, `ai-agents`, `cursor`, `mermaid`, `developer-tools`, `cli`, `nodejs`, `local-server` |
 | **Website** | *(optional)* link to npm if you publish the package |
